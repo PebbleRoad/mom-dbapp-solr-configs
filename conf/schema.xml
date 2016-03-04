@@ -15,8 +15,7 @@
 
     <field name="ngram"        type="text_suggest_ngram"     indexed="true"  stored="false" multiValued="true" />
     <field name="spell"        type="text_spell"             indexed="true"  stored="false" multiValued="true" />
-    <field name="signature"    type="string"                 indexed="true"  stored="true" />
-    <field name="company"      type="string"                 indexed="true"  stored="false" />
+    <field name="company"      type="string"                 indexed="true"  stored="false" docValues="true" />
 
     <!-- DYNAMIC FIELDS  *************************************************************************************************** -->
     <dynamicField name="*_i"          type="int"           indexed="true"  stored="true"/>
@@ -34,9 +33,10 @@
   </fields>
 
   <!-- COPY FIELDS  *************************************************************************************************** -->
-  <copyField source="dormitory_t" dest="ngram"/>
+  <copyField source="company_t" dest="ngram"/>
+  <copyField source="company_t" dest="company"/>
 <!--   <copyField source="offender_t" dest="company"/> -->
-  <copyField source="dormitory_t" dest="spell"/>
+  <copyField source="company_t" dest="spell"/>
   <!-- <copyField source="designation_t" dest="spell"/> -->
 
   <types>
