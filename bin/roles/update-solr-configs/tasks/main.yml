@@ -4,4 +4,4 @@
   #   - restart jetty
 
 - name: create core.properties..
-  template: src=core.properties.j2 dest={{ remote_path }}{{ core_name }}
+  template: src=core.properties.j2 dest={{ remote_path }}{{ core_name }}/core.properties group=solr
