@@ -1,5 +1,5 @@
-MOM DBapp Solr Configs - Approved Scaffolding Contractors
-=========================================================
+MOM DBapp Solr Configs
+======================
 
 Solr configs for MOM DBapp.
 
