@@ -835,14 +835,14 @@
      <lst name="defaults">
        <str name="echoParams">all</str>
        <int name="rows">10</int>
-       <str name="df">company_t</str>
+       <str name="df">title_t</str>
        <str name="q.alt">*:*</str>
        <str name="defType">edismax</str>
        <str name="omitHeader">true</str>
        <str name="wt">json</str>
 
-       <str name="qf">company_t^6 ngram</str>
-       <str name="pf">company_t^10</str>
+       <str name="qf">title_t^6 ngram</str>
+       <str name="pf">title_t^10</str>
 
        <!-- faceting defaults -->
        <str name="facet">on</str>
@@ -932,11 +932,11 @@
        <str name="defType">edismax</str>
        <str name="omitHeader">true</str>
 
-       <str name="qf">company_t^6 ngram</str>
-       <str name="pf">company_t^10</str>
+       <str name="qf">title_t^6 ngram</str>
+       <str name="pf">title_t^10</str>
 
        <str name="fl">id</str>
-       <str name="fl">company_t</str>
+       <str name="fl">title_t</str>
 
        <!-- spell checking defaults -->
        <str name="spellcheck">on</str>
@@ -1782,7 +1782,7 @@
          <bool name="enabled">true</bool>
          <str name="signatureField">signature</str>
          <bool name="overwriteDupes">false</bool>
-         <str name="fields">company_t,address_t,contactNo_s,postal_s,course_s</str>
+         <str name="fields">title_t,address_t,contactNo_s,postal_s,course_s</str>
          <str name="signatureClass">solr.processor.Lookup3Signature</str>
        </processor>
        <processor class="solr.LogUpdateProcessorFactory" />
