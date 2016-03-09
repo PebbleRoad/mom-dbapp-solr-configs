@@ -33,10 +33,10 @@
   </fields>
 
   <!-- COPY FIELDS  *************************************************************************************************** -->
-  <copyField source="company_t" dest="ngram"/>
-  <copyField source="company_t" dest="company_raw"/>
+  <copyField source="title_t" dest="ngram"/>
+  <copyField source="title_t" dest="title_raw"/>
 <!--   <copyField source="offender_t" dest="company"/> -->
-  <copyField source="company_t" dest="spell"/>
+  <copyField source="title_t" dest="spell"/>
   <!-- <copyField source="designation_t" dest="spell"/> -->
 
   <types>
