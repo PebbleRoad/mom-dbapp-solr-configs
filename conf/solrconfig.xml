@@ -846,9 +846,6 @@
 
        <!-- faceting defaults -->
        <str name="facet">on</str>
-       <str name="facet.field">subscopeDescription_ss</str>
-       <str name="facet.field">region_s</str>
-       <str name="facet.field">neighbourhood_s</str>
        <str name="facet.query">*</str>
        <str name="facet.mincount">1</str>
 
